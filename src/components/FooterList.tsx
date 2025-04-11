@@ -1,3 +1,8 @@
+// src/components/FooterList.tsx
+// отображает список элементов в футере
+// принимает заголовок и массив элементов в качестве пропсов
+// используется в компоненте Footer
+
 import React from 'react';
 import FooterItem from './FooterItem';
 

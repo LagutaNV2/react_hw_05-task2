@@ -1,3 +1,8 @@
+// src/components/Footer.tsx
+// отображает футер с несколькими секциями
+// принимает массив секций с заголовками и элементами в качестве пропсов
+// используется в основном приложении
+
 import React from 'react';
 import FooterList from './FooterList';
 

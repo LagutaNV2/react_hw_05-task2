@@ -1,3 +1,8 @@
+// src/components/FooterItem.tsx
+// отображает элемент списка в футере
+// принимает текст и ссылку в качестве пропсов
+// используется в компоненте Footer
+
 import React from 'react';
 
 interface FooterItemProps {
