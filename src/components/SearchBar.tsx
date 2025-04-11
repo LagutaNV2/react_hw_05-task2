@@ -2,7 +2,9 @@
 /**
  * Панель поиска с логотипом, инпутом и кнопкой
  */
-const SearchBar = () => {
+import React from 'react';
+
+const SearchBar: React.FC = () => {
     return (
       <div>
         <h1>Яндекс</h1>

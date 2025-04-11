@@ -6,8 +6,13 @@
 import React from 'react';
 import FooterList from './FooterList';
 
+interface Section {
+  title: string;
+  items: { text: string; link: string }[];
+}
+
 const Footer: React.FC = () => {
-  const sections = [
+  const sections: Section[] = [
     {
       title: 'Посещаемое',
       items: [

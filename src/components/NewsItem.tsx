@@ -1,20 +1,23 @@
 // src/components/NewsItem.tsx
+/**
+* Элемент списка новостей
+**/
+
+import React from 'react';
+
 interface NewsItemProps {
-    icon: string;
-    text: string;
-    link: string;
-  }
+  icon: string;
+  text: string;
+  link: string;
+}
 
-  /**
-   * Элемент списка новостей
-   */
-  const NewsItem = ({ icon, text, link }: NewsItemProps) => {
-    return (
-      <li>
-        <span>{icon}</span>
-        <a href={link}>{text}</a>
-      </li>
-    );
-  };
+const NewsItem: React.FC<NewsItemProps>  = ({ icon, text, link }) => {
+  return (
+    <li>
+      <span>{icon}</span>
+      <a href={link}>{text}</a>
+    </li>
+  );
+};
 
-  export default NewsItem;
+export default NewsItem;

@@ -2,8 +2,10 @@
 /**
  * Блок погоды
  */
-const Weather = () => {
-    return <div>Погода: +17°, днём +20°</div>;
-  };
+import React from 'react';
 
-  export default Weather;
+const Weather: React.FC = () => {
+  return <div>Погода: +17°, днём +400°</div>;
+};
+
+export default Weather;

@@ -4,11 +4,16 @@ import NewsList from './components/NewsList';
 import SearchBar from './components/SearchBar';
 import Banner from './components/Banner';
 import Weather from './components/Weather';
-import LinksBlock from './components/LinksBlock';
+import LinksBlock, { LinksBlockProps } from './components/LinksBlock';
 import TVProgram from './components/TVProgram';
 import Footer from './components/Footer';
 
-const App = () => {
+const App: React.FC = () => {
+  const linksBlockProps: LinksBlockProps = {
+    title: "Карта Германии",
+    items: ["Расписания"],
+  };
+
   return (
     <div>
       <Header />
@@ -17,7 +22,7 @@ const App = () => {
       <Banner />
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Weather />
-        <LinksBlock title="Карта Германии" items={["Расписания"]} />
+        <LinksBlock {...linksBlockProps} />
         <TVProgram />
       </div>
       <Footer />

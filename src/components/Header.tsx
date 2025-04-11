@@ -2,7 +2,9 @@
 /**
  * Отображает заголовок новостей с вкладками и датой
  */
-const Header = () => {
+import React from 'react';
+
+const Header: React.FC = () => {
     return <div>Сейчас в СМИ | в Германии | Рекомендуем ...</div>;
   };
 
